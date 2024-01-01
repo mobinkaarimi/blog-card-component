@@ -1,0 +1,7 @@
+.layout {
+  max-width: 100%;
+  height: 100%;
+  background: #F5E7DA;
+  background-repeat: no-repeat;
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F9F5E0", endColorstr="#F5895C", GradientType=1 );
+}
