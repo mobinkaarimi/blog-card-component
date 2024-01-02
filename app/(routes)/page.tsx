@@ -1,5 +1,9 @@
+import BlogCard from "@components/BlogCard";
+
 export default function Home() {
   return (
-    <h1 className="text-2xl text-center">Hello world!</h1>
+    <div className={`container mx-auto my-16 px-5 sm:px-1 md:px-0`}>
+      <BlogCard />
+    </div>
   );
 }
