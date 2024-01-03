@@ -1,6 +1,7 @@
 
 import Image from "next/image";
 import { cardItemType } from "@types/cardItem";
+import DescriptionShorter from "@components/DescriptionShorter";
 export default function BlogCardItem(props: cardItemType) {
   const {title, description, category, author, createTime, picture, authorAvatar, id} = props;
   console.log(picture)
@@ -21,7 +22,7 @@ export default function BlogCardItem(props: cardItemType) {
           <h2 className="text-sm font-normal text-white bg-orange-500 inline py-1 px-3 rounded-xl">{category}</h2>
         </div>
         <h2 className="text-xl font-medium">{title}</h2>
-
+        <DescriptionShorter text={description} maxLetter={55} />
         <div className="flex flex-row space-x-2 pt-2">
           <Image
             src={authorAvatar}
