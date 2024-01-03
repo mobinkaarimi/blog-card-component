@@ -1,4 +1,5 @@
-import { DescriptionShorterType, checkLetterType } from "@types/cardItem";
+// Types
+import { DescriptionShorterType } from "@types/cardItem";
 
 export default function DescriptionShorter({ text, maxLetter }: DescriptionShorterType)  {
   function checkLetterLong(paragraph: string,maxLetter: number) {

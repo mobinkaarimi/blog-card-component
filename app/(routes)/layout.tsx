@@ -1,4 +1,6 @@
+// Styles
 import styles from "./page.module.css";
+// tailwindsCss Styles
 import './globals.css'
 
 export const metadata = {

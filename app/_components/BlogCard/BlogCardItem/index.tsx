@@ -1,13 +1,15 @@
 
+// Core
 import Image from "next/image";
+// Types
 import { cardItemType } from "@types/cardItem";
+// Component
 import DescriptionShorter from "@components/DescriptionShorter";
 export default function BlogCardItem(props: cardItemType) {
   const {title, description, category, author, createTime, picture, authorAvatar, id} = props;
   console.log(picture)
   return (
-    <div className="rounded-xl relative overflow-hidden bg-white"
-    >
+    <div className="rounded-xl relative overflow-hidden bg-white">
       <Image
         alt={title}
         src={picture}
@@ -16,7 +18,6 @@ export default function BlogCardItem(props: cardItemType) {
         sizes="100vw"
         style={{ width: "100%", height: "auto" }}
       />
-
       <div className="flex flex-col space-x-1 px-4 py-4 flex-nowrap gap-y-3 my-2">
         <div>
           <h2 className="text-sm font-normal text-white bg-orange-500 inline py-1 px-3 rounded-xl">{category}</h2>

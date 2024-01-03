@@ -1,5 +1,8 @@
+// Types
 import { cardItemType } from "@app/@types/cardItem";
+// Components
 import BlogCardItem from "./BlogCardItem";
+// Constants
 import { blogCardList } from "@app/_constants";
 
 export default function BlogCard() {
