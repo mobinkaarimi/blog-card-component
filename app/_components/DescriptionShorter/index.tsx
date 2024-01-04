@@ -1,4 +1,4 @@
-// Types
+// Type
 import { DescriptionShorterType } from "@types/cardItem";
 
 export default function DescriptionShorter({ text, maxLetter }: DescriptionShorterType)  {
