@@ -1,9 +1,9 @@
 
 // Core
 import Image from "next/image";
-// Types
+// Type
 import { cardItemType } from "@types/cardItem";
-// Component
+// Componen
 import DescriptionShorter from "@components/DescriptionShorter";
 export default function BlogCardItem(props: cardItemType) {
   const {title, description, category, author, createTime, picture, authorAvatar, id} = props;
